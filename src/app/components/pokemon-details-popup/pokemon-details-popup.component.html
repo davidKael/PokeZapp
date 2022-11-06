@@ -1,0 +1,46 @@
+
+
+<mat-dialog-content>
+        
+    <div class="item-header">
+        <div class="header-top">
+            <p class="nr-text">No. {{pokemon.Pokemon?.id}}</p>
+            <div class="types">
+                <img 
+                    *ngFor="let type of pokemon.Pokemon?.types" 
+                    src="{{this.commons.GetIcon(type.type.name)}}" 
+                    width="30px" height="auto" alt=""
+                    title="{{type.type.name }}"
+                >
+            </div>
+        </div>
+
+        <p class="poke-name-text">{{((pokemon.Pokemon?.name | titlecase) || "" ) }}</p>
+
+
+    </div>
+
+       
+        
+        <img class="profile-image" src="{{pokemon.Pokemon?.sprites?.other?.home?.front_default}}"/>
+        <div *ngIf="this.pokemon.PokemonSpecies">
+            <p class="flavored-text">
+                {{this.currFlavoredText != null ? this.currFlavoredText.flavor_text :this.getFlavorText()}}
+            </p>
+           
+        </div>
+    
+    
+</mat-dialog-content>
+
+
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
+
+
+
+
+
+

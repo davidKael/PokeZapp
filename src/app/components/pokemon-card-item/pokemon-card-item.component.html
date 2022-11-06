@@ -20,12 +20,7 @@
 
         
         <img class="profile-image" src="{{pokemon.Pokemon?.sprites?.other?.home?.front_default}}"/>
-        <div *ngIf="this.selected && this.pokemon.PokemonSpecies">
-            <p class="flavored-text">
-                {{this.currFlavoredText != null ? this.currFlavoredText.flavor_text :this.getFlavorText()}}
-            </p>
-           
-        </div>
+
     </div>
    
 </div>

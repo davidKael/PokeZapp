@@ -1,3 +1,20 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.mat-dialog-container{
+    background-image: linear-gradient(rgb(73, 73, 73),rgb(26, 26, 26)) !important;
+    color: rgb(255, 255, 255);
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px !important;
+   
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
 
 html{
     background-image: linear-gradient(rgb(90, 164, 255),rgb(0, 0, 0));
@@ -15,3 +32,5 @@ html{
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

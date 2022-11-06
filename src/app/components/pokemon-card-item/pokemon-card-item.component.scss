@@ -6,10 +6,10 @@
     border-radius: 20px;
    
   
-   
+
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    
 }
 
 
@@ -17,18 +17,22 @@
 .small>.content:hover{
     background-image: linear-gradient(rgba(53, 205, 255, 0.139), rgba(0, 0, 0, 0.144));
     border-radius: 20px;
+
+    .profile-image{
+
+        -webkit-filter: 
+        drop-shadow(2px 2px 2px rgb(255, 234, 0))
+        drop-shadow(-2px -2px 2px rgb(255, 234, 0));
+        filter: 
+        drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5))
+        drop-shadow(-0.5px -0.5px 1px rgba(0, 0, 0, 0.5))
+        drop-shadow(2px 2px 3px rgb(255, 244, 123))
+        drop-shadow(-2px -2px 3px rgb(255, 244, 123));
+    }
+    
     
 }
 
-.small>.content:hover .profile-image{
-
-    -webkit-filter: 
-    drop-shadow(2px 2px 2px rgb(255, 234, 0))
-    drop-shadow(-2px -2px 2px rgb(255, 234, 0));
-    filter: 
-    drop-shadow(2px 2px 2px rgb(255, 234, 0))
-    drop-shadow(-2px -2px 2px rgb(255, 234, 0));
-}
 
 .profile-image{
     width: 100px;
@@ -89,3 +93,7 @@ width: max-content;
     padding: 15px;
 }
 
+.mat-dialog-actions>button{
+    background-image: -moz-linear-gradient(black, gray);
+    background-color: none;
+}
