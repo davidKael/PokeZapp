@@ -1,0 +1,91 @@
+.container{
+    background-image: linear-gradient(rgb(73, 73, 73),rgb(26, 26, 26));
+    color: white;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+   
+  
+   
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+
+.small>.content:hover{
+    background-image: linear-gradient(rgba(53, 205, 255, 0.139), rgba(0, 0, 0, 0.144));
+    border-radius: 20px;
+    
+}
+
+.small>.content:hover .profile-image{
+
+    -webkit-filter: 
+    drop-shadow(2px 2px 2px rgb(255, 234, 0))
+    drop-shadow(-2px -2px 2px rgb(255, 234, 0));
+    filter: 
+    drop-shadow(2px 2px 2px rgb(255, 234, 0))
+    drop-shadow(-2px -2px 2px rgb(255, 234, 0));
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 40px 20px;
+
+    -webkit-filter: 
+    drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.425))
+    drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.395)) 
+    drop-shadow(5px 3px 1px rgba(0, 0, 0, 0.425));
+    filter: 
+    drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.425))
+    drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.395)) 
+    drop-shadow(5px 3px 1px rgba(0, 0, 0, 0.425));
+    
+}
+
+
+.types{
+   grid-column: 4;
+   padding-right: 10px;
+   padding-top: 10px;
+   position: relative;
+}
+
+.header-top{
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   
+
+}
+
+
+.poke-name-text{
+
+    margin: 0;
+    font-size: large;
+    
+}
+
+
+.nr-text{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    position: relative;
+    margin: 0;
+    font-size: small;
+ display: flex;
+width: max-content;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+    
+}
+
+.flavored-text{
+    padding: 15px;
+}
+

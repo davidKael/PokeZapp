@@ -1,0 +1,29 @@
+.hej{
+    background-image: linear-gradient(rgb(73, 73, 73),rgb(26, 26, 26));
+    color: white;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    width: fit-content;
+    padding:10px;
+    text-align: center;
+
+
+
+}
+
+.pokemon-parent{
+   
+    /* padding-top: 30px;
+    padding-bottom: 60px; */
+    padding: 30px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    
+    row-gap: 10px;
+    column-gap: 10px;
+  
+}
+
