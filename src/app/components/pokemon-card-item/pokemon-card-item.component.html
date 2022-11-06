@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <p class="poke-name-text">{{(pokemon.Pokemon?.name || "" ) }}</p>
+            <p class="poke-name-text">{{((pokemon.Pokemon?.name | titlecase) || "" ) }}</p>
         
 
         </div>
