@@ -6,5 +6,4 @@ export class PokemonData{
     Pokemon!: Pokemon | null; 
     PokemonSpecies!: PokemonSpecies | null;
 
-
 }

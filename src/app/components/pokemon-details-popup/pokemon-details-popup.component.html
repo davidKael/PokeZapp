@@ -12,22 +12,32 @@
                     width="30px" height="auto" alt=""
                     title="{{type.type.name }}"
                 >
+
             </div>
         </div>
 
         <p class="poke-name-text">{{((pokemon.Pokemon?.name | titlecase) || "" ) }}</p>
 
-
+        <div *ngIf="pokemon?.PokemonSpecies">
+            <p *ngIf="pokemon.PokemonSpecies?.is_mythical==true">(mythical)</p>
+            <p *ngIf="pokemon.PokemonSpecies?.is_legendary">(legendary)</p>
+            <p *ngIf="pokemon.PokemonSpecies?.is_baby">(baby)</p>
+            <p >Habitat: {{pokemon.PokemonSpecies?.habitat?.name}}</p>
+            <p></p>
+        </div>
     </div>
 
        
         
+        <p *ngIf="pokemon.PokemonSpecies?.evolves_from_species">Evolves from: {{pokemon.PokemonSpecies?.evolves_from_species?.name || ""}}</p>
+
         <img class="profile-image" src="{{pokemon.Pokemon?.sprites?.other?.home?.front_default}}"/>
+
+
         <div *ngIf="this.pokemon.PokemonSpecies">
             <p class="flavored-text">
                 {{this.currFlavoredText != null ? this.currFlavoredText.flavor_text :this.getFlavorText()}}
             </p>
-           
         </div>
     
         <footer>

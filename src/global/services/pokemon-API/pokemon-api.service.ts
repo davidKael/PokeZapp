@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Generation } from 'src/global/models/Generation';
 import { PokemonData } from 'src/global/models/PokeData';
 
 Injectable({
@@ -43,4 +44,19 @@ export function GetDetailedData(id :number, pokeData : PokemonData){
        
     })
     
+}
+
+export function GetGenerationById(id:number, generations : Generation[]){
+    let url: string = "https://pokeapi.co/api/v2/generation/" + id + "/";
+ 
+    const foundGeneration = generations.find(g => g.id == id);
+    if(foundGeneration != null) return;
+
+    fetch(url).then(response  => response.json())
+    .then(data =>{
+        
+        generations.push(data);
+    
+        
+    })
 }

@@ -2,17 +2,17 @@ export class PokemonSpecies {
     base_happiness?:         number;
     capture_rate?:           number;
     color?:                  Color;
-    egg_groups?:             Color[];
+    egg_groups?:             EggGroup[];
     evolution_chain?:        EvolutionChain;
-    evolves_from_species?:   null;
+    evolves_from_species?:   EvolvesFromSpecies;
     flavor_text_entries?:    FlavorTextEntry[];
     form_descriptions?:      any[];
     forms_switchable?:       boolean;
     gender_rate?:            number;
     genera?:                 Genus[];
-    generation?:             Color;
-    growth_rate?:            Color;
-    habitat?:                Color;
+    generation?:             Generation;
+    growth_rate?:            GrowthRate;
+    habitat?:                Habitat;
     has_gender_differences?: boolean;
     hatch_counter?:          number;
     id?:                     number;
@@ -24,7 +24,7 @@ export class PokemonSpecies {
     order?:                  number;
     pal_park_encounters?:    PalParkEncounter[];
     pokedex_numbers?:        PokedexNumber[];
-    shape?:                  Color;
+    shape?:                  Shape;
     varieties?:              Variety[];
 }
 
@@ -32,6 +32,32 @@ export interface Color {
     name: string;
     url:  string;
 }
+
+export interface EggGroup {
+    name: string;
+    url:  string;
+}
+
+export interface Generation {
+    name: string;
+    url:  string;
+}
+
+export interface GrowthRate {
+    name: string;
+    url:  string;
+}
+
+export interface Habitat {
+    name: string;
+    url:  string;
+}
+
+export interface Shape {
+    name: string;
+    url:  string;
+}
+
 
 export interface EvolutionChain {
     url: string;
@@ -67,4 +93,9 @@ export interface PokedexNumber {
 export interface Variety {
     is_default: boolean;
     pokemon:    Color;
+}
+
+export interface EvolvesFromSpecies {
+    name:string;
+    url:string;
 }

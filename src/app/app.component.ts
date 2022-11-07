@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Generation } from 'src/global/models/Generation';
 import { PokemonData } from 'src/global/models/PokeData';
 import { CommonsService } from 'src/global/services/commons/commons.service';
 import { GetAllPokemon, GetDetailedData } from 'src/global/services/pokemon-API/pokemon-api.service';
@@ -14,6 +15,7 @@ export class AppComponent {
   selectedPokemonId : number = -1;
 
   pokemons : PokemonData[] = [];
+  generations : Generation[] = [];
 
   constructor(public commons : CommonsService){}
   ngOnInit(){
