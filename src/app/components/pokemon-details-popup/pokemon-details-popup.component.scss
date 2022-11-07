@@ -4,8 +4,6 @@
 .mat-dialog-content{
     background-color: transparent;
 
-   
-  
 }
 
 
@@ -44,7 +42,7 @@
  .poke-name-text{
  
      margin: 0;
-     font-size: large;
+     font-size: larger;
      
  }
  
@@ -56,8 +54,9 @@
      position: relative;
      margin: 0;
      font-size: small;
-  display: flex;
- width: max-content;
+    display: flex;
+    width: max-content;
+
    grid-column-start: 1;
    grid-column-end: 2;
    
@@ -66,7 +65,25 @@
  
  .flavored-text{
      padding: 15px;
- 
  }
  
+
+ button{
+    background-image: linear-gradient(rgb(83, 83, 83), rgb(41, 41, 41));
+    padding: 10px;
+    color: white;
+    border: 0 none ;
+    cursor: pointer;
+
+    &:hover{
+        color: aquamarine;
+    }
+ }
+
+ footer{
+    position:absolute;
+    bottom: 15%;
+    right: 15%;
+    height: 2.5rem;
+ }
 
